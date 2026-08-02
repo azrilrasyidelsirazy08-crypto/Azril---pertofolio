@@ -1,0 +1,409 @@
+/* CSS Reset & Variables */
+:root {
+    --bg-color: #0f172a;
+    --card-bg: #1e293b;
+    --primary: #38bdf8;
+    --text-main: #f8fafc;
+    --text-muted: #94a3b8;
+    --border: #334155;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--text-main);
+    line-height: 1.6;
+}
+
+/* Layout Container */
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Header & Navigasi */
+header {
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid var(--border);
+}
+
+.logo {
+    font-size: 1.4rem;
+    font-weight: bold;
+    color: var(--primary);
+    letter-spacing: 0.5px;
+}
+
+nav a {
+    color: var(--text-muted);
+    text-decoration: none;
+    margin-left: 20px;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: var(--primary);
+}
+
+/* Hero Section */
+.hero {
+    padding: 70px 0 50px 0;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+.hero span {
+    color: var(--primary);
+}
+
+.hero p {
+    color: var(--text-muted);
+    max-width: 600px;
+    margin: 0 auto 20px auto;
+}
+
+/* Button Component */
+.btn {
+    display: inline-block;
+    background: var(--primary);
+    color: #0f172a;
+    padding: 10px 24px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: transform 0.2s, opacity 0.2s;
+}
+
+.btn:hover {
+    opacity: 0.9;
+    transform: translateY(-2px);
+}
+
+.btn-sm {
+    padding: 8px 16px;
+    font-size: 0.85rem;
+}
+
+/* Section Title Umum */
+.section-title {
+    font-size: 1.8rem;
+    margin-bottom: 25px;
+    border-left: 4px solid var(--primary);
+    padding-left: 10px;
+}
+
+/* About Section */
+.about-section {
+    margin-bottom: 60px;
+}
+
+.about-card {
+    background: var(--card-bg);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.about-text p {
+    color: var(--text-muted);
+    margin-bottom: 15px;
+    font-size: 1rem;
+}
+
+.about-text p:last-child {
+    margin-bottom: 0;
+}
+
+.about-text strong {
+    color: var(--text-main);
+}
+
+.about-text em {
+    color: var(--primary);
+    font-style: normal;
+}
+
+.about-info-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 15px;
+    padding-top: 15px;
+    border-top: 1px solid var(--border);
+}
+
+.info-item {
+    display: flex;
+    flex-direction: column;
+}
+
+.info-label {
+    font-size: 0.8rem;
+    color: var(--text-muted);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.info-value {
+    font-size: 0.95rem;
+    font-weight: 600;
+    color: var(--primary);
+}
+
+/* Skills Section */
+.skills-section {
+    margin-bottom: 60px;
+}
+
+.skills-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.skill-tag {
+    background: var(--card-bg);
+    border: 1px solid var(--border);
+    padding: 8px 16px;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    color: var(--text-main);
+}
+
+/* =========================================================
+   RIWAYAT PENDIDIKAN SECTION (DAPAT DI-CUSTOMIZE SESUAI GAMBAR)
+   ========================================================= */
+.education-section {
+    margin-bottom: 60px;
+    background: #ffffff; /* Latar belakang putih bersih */
+    padding: 35px 30px;
+    border-radius: 10px;
+    color: #1e293b; /* Teks gelap */
+}
+
+.education-title {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #0f172a;
+    margin-bottom: 25px;
+    position: relative;
+    display: inline-block;
+}
+
+.education-title::after {
+    content: '';
+    display: block;
+    width: 35px;
+    height: 4px;
+    background-color: #2563eb; /* Garis bawah biru tebal */
+    margin-top: 6px;
+    border-radius: 2px;
+}
+
+.timeline {
+    position: relative;
+    padding-left: 5px;
+}
+
+.timeline::before {
+    content: '';
+    position: absolute;
+    left: 11px;
+    top: 8px;
+    width: 2px;
+    height: calc(100% - 20px);
+    background-color: #cbd5e1; /* Garis vertikal abu-abu */
+    z-index: 1;
+}
+
+.timeline-item {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 20px;
+    position: relative;
+    z-index: 2;
+}
+
+.timeline-item:last-child {
+    margin-bottom: 0;
+}
+
+.timeline-dot {
+    width: 14px;
+    height: 14px;
+    background-color: #2563eb;
+    border-radius: 50%;
+    margin-right: 20px;
+    margin-top: 5px;
+    position: relative;
+    border: 2px solid #2563eb;
+    flex-shrink: 0;
+}
+
+.timeline-dot::before {
+    content: '';
+    position: absolute;
+    top: -5px;
+    left: -5px;
+    width: 20px;
+    height: 20px;
+    background-color: rgba(37, 99, 235, 0.2);
+    border-radius: 50%;
+}
+
+.timeline-content {
+    flex: 1;
+}
+
+.school-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+}
+
+.school-name {
+    font-size: 1.05rem;
+    font-weight: 700;
+    color: #0f172a;
+}
+
+.school-major {
+    font-size: 0.9rem;
+    color: #2563eb;
+    font-weight: 600;
+    margin-top: 2px;
+}
+
+.school-year {
+    font-size: 0.85rem;
+    color: #64748b;
+    background-color: #f1f5f9;
+    padding: 3px 12px;
+    border-radius: 6px;
+    font-weight: 500;
+    white-space: nowrap;
+}
+
+/* =========================================================
+   PROJECTS SECTION
+   ========================================================= */
+.projects {
+    margin-bottom: 60px;
+}
+
+.project-grid {
+    display: grid !important;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)) !important;
+    gap: 25px !important;
+    width: 100% !important;
+}
+
+.project-card {
+    background: var(--card-bg);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: transform 0.2s, border-color 0.2s;
+}
+
+.project-card:hover {
+    transform: translateY(-4px);
+    border-color: var(--primary);
+}
+
+.image-frame,
+.card-media {
+    width: 100% !important;
+    height: 180px !important;
+    max-height: 180px !important;
+    background-color: #0b1329 !important;
+    border-bottom: 1px solid var(--border);
+    overflow: hidden !important;
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    padding: 10px !important;
+}
+
+.image-frame img,
+.card-media img,
+.project-card img {
+    max-width: 100% !important;
+    max-height: 160px !important;
+    width: auto !important;
+    height: auto !important;
+    object-fit: contain !important;
+    display: block !important;
+    margin: 0 auto !important;
+}
+
+.card-body {
+    padding: 20px;
+    flex-grow: 1;
+}
+
+.card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.project-card h3 {
+    font-size: 1.05rem;
+    color: var(--text-main);
+    line-height: 1.3;
+}
+
+.card-tag {
+    font-size: 0.75rem;
+    background: rgba(56, 189, 248, 0.1);
+    color: var(--primary);
+    padding: 3px 8px;
+    border-radius: 4px;
+    white-space: nowrap;
+}
+
+.project-card p {
+    color: var(--text-muted);
+    font-size: 0.9rem;
+    margin-bottom: 15px;
+}
+
+.card-footer {
+    padding: 0 20px 20px 20px;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px 0;
+    color: var(--text-muted);
+    font-size: 0.85rem;
+    border-top: 1px solid var(--border);
+}

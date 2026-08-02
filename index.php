@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portofolio | Azril Rasyid El Sirazy</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <!-- Header / Navigasi -->
+        <header>
+            <div class="logo">Azril</div>
+            <nav>
+                <a href="#about">Tentang Saya</a>
+                <a href="#skills">Keahlian</a>
+                <a href="#education">Pendidikan</a>
+                <a href="#projects">Proyek</a>
+            </nav>
+        </header>
+
+        <!-- Hero Section -->
+        <section class="hero">
+            <h1>Halo, Saya <span>Azril Rasyid El Sirazy</span></h1>
+            <p>Siswa SMK Jurusan RPL yang berfokus pada pengembangan aplikasi web fungsional, responsif, dan terstruktur.</p>
+        </section>
+
+        <!-- About Me Section -->
+        <section id="about" class="about-section">
+            <h2 class="section-title">Tentang Saya</h2>
+            <div class="about-card">
+                <div class="about-text">
+                    <p>
+                        Saya adalah seorang siswa <strong>SMK jurusan RPL</strong> yang memiliki pemahaman teknis dalam pengembangan web dasar serta pengelolaan basis data. Selain dunia teknologi, saya juga memiliki ketertarikan tinggi dalam menganalisis detail spesifikasi perangkat keras/gadget serta dunia olahraga. Saya terbiasa berpikir analitis, beradaptasi dengan alur kerja digital, dan terbuka untuk eksplorasi di berbagai bidang baru.
+                    </p>
+                </div>
+
+                <div class="about-info-grid">
+                    <div class="info-item">
+                        <span class="info-label">Tempat/Tanggal lahir</span>
+                        <span class="info-value">Karanganyar, 07 Februari 2010</span>
+                    </div>
+                    <div class="info-item">
+                        <span class="info-label">Alamat</span>
+                        <span class="info-value">Cangakan Timur Rt/Rw 02, Cangakan, Karanganyar, Jawa Tengah</span>
+                    </div>
+                    <div class="info-item">
+                        <span class="info-label">Status</span>
+                        <span class="info-value">Pelajar</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="skills-section">
+            <h2 class="section-title">Keahlian</h2>
+            <div class="skills-grid">
+                <div class="skill-tag">HTML</div>
+                <div class="skill-tag">CSS</div>
+                <div class="skill-tag">PHP</div>
+                <div class="skill-tag">MySQL</div>
+                <div class="skill-tag">Desain</div>
+                <div class="skill-tag">Bootstrap</div>
+            </div>
+        </section>
+
+        <!-- Education Section (Sesuai Gambar) -->
+        <section id="education" class="education-section">
+            <h2 class="education-title">Riwayat Pendidikan</h2>
+            
+            <div class="timeline">
+                <!-- SMKN 2 Karanganyar -->
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="school-header">
+                            <h3 class="school-name">SMKN 2 Karanganyar</h3>
+                            <span class="school-year">2025 - Sekarang</span>
+                        </div>
+                        <p class="school-major">Rekayasa Perangkat Lunak (RPL)</p>
+                    </div>
+                </div>
+
+                <!-- SMPN 5 Karanganyar -->
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="school-header">
+                            <h3 class="school-name">SMPN 5 Karanganyar</h3>
+                            <span class="school-year">2022 - 2025</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- SDN 01 Cangakan -->
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="school-header">
+                            <h3 class="school-name">SDN 01 Cangakan</h3>
+                            <span class="school-year">2016 - 2022</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="projects">
+            <h2 class="section-title">Proyek Pilihan</h2>
+            <div class="project-grid">
+                
+                <article class="project-card">
+                    <div class="image-frame">
+                        <img src="tokojersey.png" alt="MajesticJersey Atelier Showcase">
+                    </div>
+                    <div class="card-body">
+                        <div class="card-header">
+                            <h3>TOKO JERSEY (MAJESTIC JERSEY ATELIER)</h3>
+                            <span class="card-tag">E-Commerce UI</span>
+                        </div>
+                        <p>Platform katalog toko jersey sepak bola interaktif dengan fitur pencarian, filter kategori, manajemen produk (CRUD), serta antarmuka modern yang responsif.</p>
+                    </div>
+                    <div class="card-footer">
+                        <a href="http://localhost/toko_jersey/index.php" class="btn btn-sm">Detail Proyek</a>
+                    </div>
+                </article>
+
+                <article class="project-card">
+                    <div class="image-frame">
+                        <img src="tokomobil.png" alt="Veloce Supercars Showcase">
+                    </div>
+                    <div class="card-body">
+                        <div class="card-header">
+                            <h3>TOKO MOBIL (VELOCE SUPERCARS)</h3>
+                            <span class="card-tag">Showroom UI</span>
+                        </div>
+                        <p>Website landing page showcase mobil mewah modern dengan fitur hero banner carousel, navigasi transparan, serta daftar katalog supercars yang elegan.</p>
+                    </div>
+                    <div class="card-footer">
+                        <a href="http://localhost/toko_mobil/" class="btn btn-sm">Detail Proyek</a>
+                    </div>
+                </article>
+
+                <article class="project-card">
+                    <div class="image-frame">
+                        <img src="kasir.png" alt="Modern Flexbox Layout">
+                    </div>
+                    <div class="card-body">
+                        <div class="card-header">
+                            <h3>SISTEM KASIR</h3>
+                            <span class="card-tag">Landing Page</span>
+                        </div>
+                        <p>Desain halaman depan web modern yang fleksibel dan rapi di layar desktop maupun mobile menggunakan CSS Flexbox.</p>
+                    </div>
+                    <div class="card-footer">
+                        <a href="http://localhost/kasir_azril/index.php" class="btn btn-sm">Detail Proyek</a>
+                    </div>
+                </article>
+
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer>
+            <p>&copy; 2026 Azril Rasyid El Sirazy. Dibuat dengan HTML & CSS.</p>
+        </footer>
+    </div>
+
+</body>
+</html>
